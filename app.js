@@ -16,8 +16,8 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 app.use('/api', schoolRoutes);
-app.get('/health',(req, res)=> res.json({ok: true}));
+app.get('/',(req, res)=> res.json({ok: true, message: "School API is live"}));
 app.use((_req,res)=> res.status(404).json({ok: false, error: 'Not found'}));
 
-const PORT = process.env.PORT|| 4000;
+const PORT = process.env.PORT|| 10000;
 app.listen(PORT,()=> console.log(`Server running on http://localhost:${PORT}`));
