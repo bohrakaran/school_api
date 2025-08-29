@@ -17,6 +17,6 @@ A simple RESTful API built with *Node.js, **Express, and **MongoDB* for managing
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/school-api.git
+git clone https://github.com/bohrakaran/school-api.git
 cd school-api
 npm install
